@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla';
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: hsl(204, 43%, 93%);;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 700px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+#description{
+    background: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    align-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.d-title{
+    font-size: 32px;
+    color: hsl(179, 62%, 43%);
+    line-height: 1.9;
+}
+
+.d-subtitle{
+    font-size: 22px;
+    color: hsl(71, 73%, 54%);
+    line-height: 3;
+}
+
+.d-paragraph{
+    font-size: 16px;
+    color: hsl(218, 22%, 67%);
+    line-height: 2;
+}
+#price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#p-price{
+    background: hsl(179, 62%, 43%);
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+}
+
+#p-price h2, #why-us h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+#p-1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#p-title, #p-price p{
+    color: white;
+}
+
+#p-1 p{
+    color: hsl(204, 43%, 93%);
+}
+
+#price a{
+    display: block;
+    background: hsl(71, 73%, 54%);
+    margin-top: 30px;
+    padding:20px 10px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#why-us{
+    background: hsla(179, 62%, 43%, 0.753);
+    padding: 30px;
+    border-bottom-right-radius: 20px;
+}
+
+#why-us p{
+    color: white;
+}
+
+@media(max-width: 740px){
+    main{
+        border-radius: 1px;
+        grid-template-rows: 1fr;
+        max-width: 375px;
+    }
+
+    #price{
+        grid-template-columns: 1fr;
+    }
+    #p-price, #why-us{
+       border-radius: 0px;
+    }
+
+    #why-us{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .d-subtitle{
+        line-height: 1;
+        padding: 20px 0px;
+    }
+    #description{
+        padding-bottom: 20px;
+    }
+}
